@@ -38,4 +38,9 @@ public class Customer {
     public void setPIN(int PIN) {
         this.PIN = PIN;
     }
+
+    @Override
+    public String toString() {
+        return "Name: " + this.name + "Address: " + this.address + "PIN: " + this.PIN;
+    }
 }
