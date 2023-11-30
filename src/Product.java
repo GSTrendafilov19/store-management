@@ -50,11 +50,11 @@ public class Product {
         this.price = price;
     }
 
-    public void display() {
-        System.out.println("Inventory Number: " + ID);
-        System.out.println("Brand: " + brand);
-        System.out.println("Name: " + name);
-        System.out.println("Price: $" + price);
+    @Override
+    public String toString() {
+        return "Inventory Number: " + this.ID
+        + '\'' + "Brand: " + this.brand + '\'' + "Name: " + this.name
+                + '\'' + "Price: " + this.price;
     }
 
 }
