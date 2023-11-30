@@ -50,8 +50,11 @@ public class Product {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "ID: " + this.ID + "Brand: " + this.brand + "Name: " + this.name + "Price: " + this.price;
+    public void display() {
+        System.out.println("Inventory Number: " + ID);
+        System.out.println("Brand: " + brand);
+        System.out.println("Name: " + name);
+        System.out.println("Price: $" + price);
     }
+
 }

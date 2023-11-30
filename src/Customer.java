@@ -39,8 +39,9 @@ public class Customer {
         this.PIN = PIN;
     }
 
-    @Override
-    public String toString() {
-        return "Name: " + this.name + "Address: " + this.address + "PIN: " + this.PIN;
+    public void display() {
+        System.out.println("Name: " + name);
+        System.out.println("Address: " + address);
+        System.out.println("EGN: " + PIN);
     }
 }
